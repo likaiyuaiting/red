@@ -1,0 +1,26 @@
+缓冲区
+
+    :buffers或:ls或:files 显示缓冲区列表。
+    ctrl+^：在最近两个缓冲区间切换。
+    :bn -- 下一个缓冲区。
+    :bp -- 上一个缓冲区。
+    :bl -- 最后一个缓冲区。
+    :b[n]或:[n]b -- 切换到第n个缓冲区。
+    :nbw(ipeout) -- 彻底删除第n个缓冲区。
+    :nbd(elete) -- 删除第n个缓冲区，并未真正删除，还在unlisted列表中。
+    :ba[ll] -- 把所有的缓冲区在当前页中打开，每个缓冲区占一个窗口。
+
+10. 分屏编辑
+
+    vim -o file1 file2:水平分割窗口，同时打开file1和file2
+    vim -O file1 file2:垂直分割窗口，同时打开file1和file2
+
+10.1 水平分割
+
+    :split(:sp) -- 把当前窗水平分割成两个窗口。(CTRL-W s 或 CTRL-W CTRL-S) 注意如果在终端下，CTRL-S可能会冻结终端，请按CTRL-Q继续。
+    :split filename -- 水平分割窗口，并在新窗口中显示另一个文件。
+    :nsplit(:nsp) -- 水平分割出一个n行高的窗口。
+    :[N]new -- 水平分割出一个N行高的窗口，并编辑一个新文件。 (CTRL-W n或 CTRL-W CTRL-N)
+    ctrl+w f --水平分割出一个窗口，并在新窗口打开名称为光标所在词的文件 。
+    C-w C-^ -- 水平分割一个窗口，打开刚才编辑的文件。
+
